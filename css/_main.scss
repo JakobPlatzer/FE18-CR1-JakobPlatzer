@@ -1,0 +1,74 @@
+.container {
+    width: 95%;
+    display: grid;
+    grid-template-columns: repeat(3, 30%);
+    gap: 2.5%;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.picture {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 8fr;
+    border: 2px solid rgba(0, 0, 0, 0.8);
+    background-size: cover;
+    width: 100%;
+    height: 60vh;
+    overflow: hidden;
+}
+
+.picture p {
+    box-sizing: border-box;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    padding: 5%;
+    text-align: center;
+}
+
+.meal {
+    grid-row: 7;
+}
+
+.mealtime {
+    grid-row: 8;
+}
+
+#omelette {
+    background-image: url(images/omelette.jpg);
+}
+
+#burger {
+    background-image: url(images/burger.jpg);
+}
+
+#pizza {
+    background-image: url(images/pizza.jpg);
+}
+
+
+#pancakes {
+    background-image: url(images/pancakes.jpg);
+}
+
+#pasta {
+    background-image: url(images/pasta.jpg);
+}
+
+#taco {
+    background-image: url(images/taco.jpg);
+}
+
+#oatmeal {
+    background-image: url(images/oatmeal.jpg);
+}
+
+#brownie {
+    background-image: url(images/brownie.jpg);
+}
+
+#steak {
+    background-image: url(images/steak.jpg);
+}
