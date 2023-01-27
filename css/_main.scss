@@ -17,6 +17,11 @@
     width: 100%;
     height: 60vh;
     overflow: hidden;
+    transition: 400ms;
+}
+
+.picture:hover {
+    size: 102%;
 }
 
 .picture p {

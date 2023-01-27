@@ -41,17 +41,14 @@ header a {
 .explore a {
     padding: 1em;
     border-radius: 50%;
-    border: solid white;
     transition: 400ms;
 }
 
 .explore a:hover{
     font-size: 103%;
-    border-color: black;
 }
 
 .explore button {
-    border: solid white;
     border-radius: 45%;
     background-color: white;
     font-size: 145%;
