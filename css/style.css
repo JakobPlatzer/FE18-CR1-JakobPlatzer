@@ -203,6 +203,27 @@ header a {
   font-weight: bold;
 }
 
+/*concerning the about page*/
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2vh 0;
+}
+
+.about h1 {
+  padding: 3vh;
+}
+
+.about h3 {
+  padding: 2vh;
+}
+
+.about p {
+  padding: 1vh;
+}
+
 /*Footer includes the bottom navbar, links to social media (I couldn't find the right icons) and the copyright*/
 /*basic settings for the footer
 it is made of two unordered lists and a div*/
