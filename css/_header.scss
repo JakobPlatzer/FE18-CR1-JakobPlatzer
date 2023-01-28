@@ -17,8 +17,6 @@ header a {
 }
 
 
-
-
 .logo {
     font-family: 'Courgette', cursive;
     text-decoration: none;
@@ -41,25 +39,28 @@ header a {
 .explore a {
     padding: 1em;
     border-radius: 50%;
+    border: 2px solid white;
     transition: 400ms;
+    
 }
 
 .explore a:hover{
     font-size: 103%;
+    border-color: black;
 }
 
 .explore button {
-    border-radius: 45%;
+    border: white;
     background-color: white;
     font-size: 145%;
     transition: 400ms;
-    padding: 0 1em;
+    padding: 0 0.75em;
 }
 
 .explore button:hover {
-    border: black;
     font-size: 155%;
 }
+
 
 .navtop ul {
     list-style: none;
@@ -68,12 +69,13 @@ header a {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    overflow: scroll;
 }
 
 .navtop ul li {
     transition: 400ms;
-    padding: 1em;
-    margin: 0.5em;
+    padding: 1vw;
+    margin: 1vh;
     border-radius: 50%;
     border-style: solid;
     border-color: white;

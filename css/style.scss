@@ -6,7 +6,11 @@
 @import "header";
 @import "main";
 @import "footer";
+@import "media";
 
 body {
     font-family: 'Noto Serif', 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }

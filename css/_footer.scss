@@ -1,0 +1,37 @@
+
+.navbottom {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding-top: 3vh;
+}
+
+.navbottom li {
+    display: inline-block;
+    padding: 0 7vw;
+    margin: 1vh;
+    transition: 400ms;
+}
+
+.navbottom li:hover {
+    font-size: 102%;
+}
+
+.navbottom a {
+    color: white;
+    text-decoration: none;
+}
+
+.socialmedia {
+    padding-top: 1vh;
+}
+
+.navbottom div {
+    padding: 1em 0;
+}
+
+.leftborder {
+    border-left: 2px solid white;
+}
+
+

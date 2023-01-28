@@ -1,11 +1,12 @@
 .container {
     width: 95%;
+    position: relative;
     display: grid;
     grid-template-columns: repeat(3, 30%);
     gap: 2.5%;
-    margin: auto;
-    margin-top: 5%;
-    margin-bottom: 5%;
+    margin: 5% 2.5% 5%;
+    padding-bottom: 7%;
+    overflow: scroll;
 }
 
 .picture {
@@ -20,17 +21,18 @@
     transition: 400ms;
 }
 
-.picture:hover {
-    size: 102%;
-}
-
 .picture p {
     box-sizing: border-box;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.6);
     color: white;
     padding: 5%;
     text-align: center;
+}
+
+.picture:hover {
+    font-size: 108%;
+    filter: brightness(70%);
 }
 
 .meal {
