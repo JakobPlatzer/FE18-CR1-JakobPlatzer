@@ -3,10 +3,24 @@
     padding: 0;
 }
 
+/*The page has 3 parts: header, main and footer */
+
 @import "header";
+
+/*Header includes the link in the upper left corner, the links to Recipes, Recipe of the month and a search button. 
+Lastly the navbar at the top. Only the link to the Recipe of the month works*/
+
 @import "main";
+
+/*Main is basically the container for the content*/
+
 @import "footer";
+
+/*Footer includes the bottom navbar, links to social media (I couldn't find the right icons) and the copyright*/
+
 @import "media";
+
+/*Media includes the media queries for smartphone and tablet.*/
 
 body {
     font-family: 'Noto Serif', 'Times New Roman', Times, serif;
@@ -14,3 +28,4 @@ body {
     flex-direction: column;
     justify-content: center;
 }
+ /*This are settings for the whole page*/

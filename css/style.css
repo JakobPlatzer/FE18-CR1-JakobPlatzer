@@ -3,6 +3,7 @@
   padding: 0;
 }
 
+/*The page has 3 parts: header, main and footer */
 header {
   width: 100%;
   font-size: 120%;
@@ -87,6 +88,8 @@ header a {
   border-color: black;
 }
 
+/*Header includes the link in the upper left corner, the links to Recipes, Recipe of the month and a search button. 
+Lastly the navbar at the top. Only the link to the Recipe of the month works*/
 .container {
   width: 95%;
   position: relative;
@@ -168,6 +171,32 @@ header a {
   background-image: url(images/steak.jpg);
 }
 
+.recipe {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 18vh;
+}
+
+.recipe ol {
+  padding: 3vh 0;
+}
+
+.recipe ul {
+  padding: 3vh 0;
+}
+
+#ingredients {
+  font-weight: bold;
+}
+
+/*Main is basically the container for the content*/
+footer {
+  width: 100%;
+}
+
 .navbottom {
   background-color: black;
   color: white;
@@ -203,6 +232,7 @@ header a {
   border-left: 2px solid white;
 }
 
+/*Footer includes the bottom navbar, links to social media (I couldn't find the right icons) and the copyright*/
 @media screen and (max-width: 480px) {
   .container {
     grid-template-columns: repeat(1, 1fr);
@@ -220,9 +250,12 @@ header a {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+/*Media includes the media queries for smartphone and tablet.*/
 body {
   font-family: "Noto Serif", "Times New Roman", Times, serif;
   display: flex;
   flex-direction: column;
   justify-content: center;
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*This are settings for the whole page*//*# sourceMappingURL=style.css.map */
