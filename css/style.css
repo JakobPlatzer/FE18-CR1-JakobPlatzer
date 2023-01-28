@@ -4,6 +4,9 @@
 }
 
 /*The page has 3 parts: header, main and footer */
+/*Header includes the link in the upper left corner, the links to Recipes, Recipe of the month and a search button. 
+Lastly the navbar at the top. Only the link to the Recipe of the month works*/
+/*main settings for the header*/
 header {
   width: 100%;
   font-size: 120%;
@@ -14,6 +17,7 @@ header a {
   text-decoration: none;
 }
 
+/*this concerns the upper half of the header, including Logo and "explore"-section*/
 .top {
   display: flex;
   justify-content: space-between;
@@ -21,6 +25,7 @@ header a {
   padding: 1em;
 }
 
+/*upper left corner link to index page*/
 .logo {
   font-family: "Courgette", cursive;
   text-decoration: none;
@@ -34,6 +39,7 @@ header a {
   font-size: 255%;
 }
 
+/*link to Recipe of the month*/
 .explore {
   width: 40%;
   display: flex;
@@ -64,6 +70,7 @@ header a {
   font-size: 155%;
 }
 
+/*this concerns the navbar at the top*/
 .navtop ul {
   list-style: none;
   border-top: 2px solid rgba(0, 0, 0, 0.8);
@@ -88,8 +95,8 @@ header a {
   border-color: black;
 }
 
-/*Header includes the link in the upper left corner, the links to Recipes, Recipe of the month and a search button. 
-Lastly the navbar at the top. Only the link to the Recipe of the month works*/
+/*Main is basically the container for the content*/
+/*broader settings for the main content*/
 .container {
   width: 95%;
   position: relative;
@@ -98,9 +105,10 @@ Lastly the navbar at the top. Only the link to the Recipe of the month works*/
   gap: 2.5%;
   margin: 5% 2.5% 5%;
   padding-bottom: 7%;
-  overflow: scroll;
+  overflow: scroll; /*set it to scroll because it would flow over the footer in smaller screensizes*/
 }
 
+/*settings for everything concerning the picture tiles and their description*/
 .picture {
   display: grid;
   grid-template-columns: 1fr;
@@ -127,6 +135,7 @@ Lastly the navbar at the top. Only the link to the Recipe of the month works*/
   filter: brightness(70%);
 }
 
+/*this targets the paragraphs in the divs*/
 .meal {
   grid-row: 7;
 }
@@ -135,6 +144,7 @@ Lastly the navbar at the top. Only the link to the Recipe of the month works*/
   grid-row: 8;
 }
 
+/*this are the background pictures for the tiles*/
 #omelette {
   background-image: url(images/omelette.jpg);
 }
@@ -171,6 +181,7 @@ Lastly the navbar at the top. Only the link to the Recipe of the month works*/
   background-image: url(images/steak.jpg);
 }
 
+/*This are the settings for the recipe of the month page*/
 .recipe {
   width: 80%;
   display: flex;
@@ -192,7 +203,9 @@ Lastly the navbar at the top. Only the link to the Recipe of the month works*/
   font-weight: bold;
 }
 
-/*Main is basically the container for the content*/
+/*Footer includes the bottom navbar, links to social media (I couldn't find the right icons) and the copyright*/
+/*basic settings for the footer
+it is made of two unordered lists and a div*/
 footer {
   width: 100%;
 }
@@ -232,7 +245,8 @@ footer {
   border-left: 2px solid white;
 }
 
-/*Footer includes the bottom navbar, links to social media (I couldn't find the right icons) and the copyright*/
+/*Media includes the media queries for smartphone and tablet.*/
+/*smartphone settings: the top navbar is hidden in very small screens*/
 @media screen and (max-width: 480px) {
   .container {
     grid-template-columns: repeat(1, 1fr);
@@ -245,17 +259,16 @@ footer {
     display: none;
   }
 }
+/*tablet settings*/
 @media screen and (min-width: 481px) and (max-width: 1200px) {
   .container {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-/*Media includes the media queries for smartphone and tablet.*/
+/*This are settings for the whole page*/
 body {
   font-family: "Noto Serif", "Times New Roman", Times, serif;
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-
-/*This are settings for the whole page*//*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

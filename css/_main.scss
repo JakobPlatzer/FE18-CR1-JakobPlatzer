@@ -1,3 +1,5 @@
+/*broader settings for the main content*/
+
 .container {
     width: 95%;
     position: relative;
@@ -6,8 +8,10 @@
     gap: 2.5%;
     margin: 5% 2.5% 5%;
     padding-bottom: 7%;
-    overflow: scroll;
+    overflow: scroll; /*set it to scroll because it would flow over the footer in smaller screensizes*/
 }
+
+/*settings for everything concerning the picture tiles and their description*/
 
 .picture {
     display: grid;
@@ -35,6 +39,8 @@
     filter: brightness(70%);
 }
 
+/*this targets the paragraphs in the divs*/
+
 .meal {
     grid-row: 7;
 }
@@ -42,6 +48,8 @@
 .mealtime {
     grid-row: 8;
 }
+
+/*this are the background pictures for the tiles*/
 
 #omelette {
     background-image: url(images/omelette.jpg);
@@ -79,6 +87,8 @@
 #steak {
     background-image: url(images/steak.jpg);
 }
+
+/*This are the settings for the recipe of the month page*/
 
 .recipe {
     width: 80%;

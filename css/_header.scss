@@ -1,3 +1,4 @@
+/*main settings for the header*/
 
 header {
     width: 100%;
@@ -8,6 +9,7 @@ header a {
     text-decoration: none;
 }
 
+/*this concerns the upper half of the header, including Logo and "explore"-section*/
 
 .top {
     display: flex;
@@ -16,6 +18,7 @@ header a {
     padding: 1em;
 }
 
+/*upper left corner link to index page*/
 
 .logo {
     font-family: 'Courgette', cursive;
@@ -29,6 +32,8 @@ header a {
 .logo:hover {
     font-size: 255%;
 }
+
+/*link to Recipe of the month*/
 
 .explore {
     width: 40%;
@@ -61,6 +66,7 @@ header a {
     font-size: 155%;
 }
 
+/*this concerns the navbar at the top*/
 
 .navtop ul {
     list-style: none;
