@@ -1,0 +1,21 @@
+@media screen and (max-width: 480px) {
+    .container {
+        grid-template-columns: repeat(1, 1fr);
+        width: 90%;
+    }
+    .top {
+        flex-direction: column;
+    }
+
+    .navtop {
+        display: none;
+    }
+
+    .
+}
+
+@media screen and (min-width: 481px) and (max-width: 1200px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
